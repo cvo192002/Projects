@@ -1,0 +1,89 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5dc; /* A tan/cream background */
+    padding: 20px; /* Increased padding for a taller navigation bar */
+    color: black; /* Black font color */
+    text-align: center;
+    border-bottom: 3px solid #8d8c7a; /* A muted border color for some contrast */
+    font-family: Georgia, serif; /* Using Georgia for a unique yet built-in font */
+    font-size: 18px; /* General font size for the navigation bar */
+  
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      width: 100%;
+  
+      h1 {
+        font-size: 24px; /* Larger font size for the header */
+        color: black; /* Black header text for better contrast */
+        text-decoration: none !important;
+        margin: 0; /* Remove margin to keep the layout tight */
+      }
+  
+      a {
+        font-size: 16px; /* Adjusted font size for links */
+        color: black; /* Black link text */
+        padding: 10px 0; /* Increased padding for better touch target size */
+        text-decoration: none !important;
+  
+        &:hover {
+          color: #333; /* Darker grey on hover for a subtle effect */
+        }
+      }
+    }
+  
+    .hamburger {
+      background: none;
+      border: none;
+      color: black; /* Black hamburger icon */
+      font-size: 30px; /* Larger font size for the hamburger icon */
+      cursor: pointer;
+    }
+  
+    .menu {
+      display: none; /* Menu is hidden by default */
+      flex-direction: column;
+      width: 100%;
+      background-color: #f5f5dc; /* Matching the tan/cream theme for the dropdown */
+      z-index: 10; /* Ensure it's above other content */
+  
+      &.open {
+        display: flex; /* Display menu when open */
+      }
+  
+      a {
+        font-size: 18px; /* Slightly larger font size for menu links */
+        color: black; /* Black text for links */
+        padding: 12px 0; /* Increased padding for a larger clickable area */
+        text-decoration: none !important;
+  
+        &:hover {
+          color: #333; /* Darker grey on hover */
+        }
+      }
+    }
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .navigation {
+      .hamburger {
+        display: none; /* Hide hamburger icon on larger screens */
+      }
+  
+      .menu {
+        flex-direction: row;
+        position: static;
+        transform: translateY(0);
+  
+        a {
+          padding: 0 20px; /* Increased lateral padding for links on larger screens */
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,74 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  /* Navigation Styles */
+  .Navigation {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Styles */
+  .Footer {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin-top: auto;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* MainPage Styles */
+  .MainPage {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Detail Styles */
+  .Detail {
+    padding: 2rem;
+  }
+  
+  /* CreateRecipe and EditRecipe Styles */
+  .CreateRecipe,
+  .EditRecipe {
+    padding: 2rem;
+  }
+  
+  /* UpdateReview Styles */
+  .UpdateReview {
+    padding: 2rem;
+  }
+  
+  /* Custom Button Styles */
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Custom Link Styles */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  

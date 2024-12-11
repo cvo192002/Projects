@@ -1,0 +1,15 @@
+.app-footer {
+    background-color: #D2B48C; /* Tan color */
+    color: #000000; /* Black text */
+    padding: 0.5rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 4px solid white;
+  }
+  
+  .main-content {
+    padding-bottom: 5rem; /* Ensure enough padding at the bottom for the fixed footer */
+  }
+  
